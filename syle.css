@@ -10,6 +10,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
+    margin: 0 auto;
     width: 618px;
     height: 618px;
 }
@@ -17,4 +18,24 @@
 .mole {
     background-image: url(Moleimg.jpg);
     background-size: cover;
+}
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.score-time {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+}
+
+.time {
+    margin: 15px;
+}
+
+.scoreText {
+    margin: 15px;
 }
