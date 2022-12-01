@@ -1,6 +1,6 @@
 .square {
-    width: 260px;
-    height: 260px;
+    width: 200px;
+    height: 200px;
     border-style: groove;
     border-color: black;
 }
@@ -10,8 +10,8 @@
     flex-flow: row wrap;
     justify-content: center;
     align-content: center;
-    width: 798px;
-    height: 798px;
+    width: 618px;
+    height: 618px;
 }
 
 .mole {
