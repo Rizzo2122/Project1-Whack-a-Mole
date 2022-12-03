@@ -4,6 +4,7 @@ const timeLeft = document.querySelector('#time-left')
 let score = document.querySelector('#score')
 
 let result = 0
+let currentTime = timeLeft.textContent
 
 //function to randomly select a square on the grid
 function randomSquare() {
@@ -31,3 +32,17 @@ function moveMole() {
     timerId = setInterval(randomSquare, 500)
 }
 
+moveMole()
+
+//function that counts down from 60 and ends the game
+function countDown() {
+    currentTime--
+    timeLeft.textContent = currentTime
+
+    if(currentTime === 0) {
+        clearInterval(timerId)
+        alert('GAME OVER! Your score is' + ' ' + result)
+    }
+}
+
+let timerId = setInterval(countDown, 500)
