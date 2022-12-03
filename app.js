@@ -16,3 +16,18 @@ function randomSquare() {
     hitPosition = randomPosition.id
 }
 
+//function to add a point when the hitPosition is clicked
+square.forEach(id => {
+    id.addEventListener('click', () => {
+        if(id.id === hitPosition) {
+            result = result + 1
+            score.textContent = result
+        }
+    })
+})
+
+function moveMole() {
+    let timerId = null
+    timerId = setInterval(randomSquare, 500)
+}
+
