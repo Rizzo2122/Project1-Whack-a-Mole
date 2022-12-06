@@ -23,6 +23,8 @@
 h1 {
     margin: 0 auto;
     text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    color: #523a01;
 }
 
 .score-time {
@@ -34,8 +36,15 @@ h1 {
 
 .time {
     margin: 15px;
+    color: #0C120C;
 }
 
 .scoreText {
     margin: 15px;
+    color: #0C120C;
+}
+
+body {
+    background-image: url(moleBackground.png);
+    background-size: cover;
 }
